@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'TWWET_DASHBOARD',
 ]
 
 MIDDLEWARE = [
@@ -125,7 +126,13 @@ STATICFILES_DIRS=(
     os.path.join(BASE_DIR,'static'),
 )
 
+#own written code
+#for defining path
+
 STATICFILES_FINDER=(
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
 STATIC_ROOT= ''
+
+#model.save for saving model which hdf5 here
+#model got generated after training through jupyter notebook which is not put here
